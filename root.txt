@@ -1,0 +1,20 @@
+c = [2 10 -7 -60 4 50];
+roots(c)
+ans =
+
+  -4.16812
+  -2.88292
+   2.07624
+  -1.01370
+   0.98850
+
+clear
+x = [-4:0.1:4];
+c = [2 10 -7 -60 4 50];
+f = polyval(c,x);
+plot(x,f)
+plot(x,f)
+grid on
+xlabel('X')
+ylabel('Y')
+title('wow')
