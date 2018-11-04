@@ -1,0 +1,8 @@
+x = [-10:1:10];
+y = x;
+[X Y] = meshgrid(x,y);
+z = sin(sqrt(X.^2+Y.^2));
+surface(X,Y,z)
+grid on
+title('This 16001303')
+xlabel('X')
