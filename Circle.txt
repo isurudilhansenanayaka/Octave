@@ -1,0 +1,7 @@
+function [x,y]=getCircle(center,r)
+  t=linspace(0,2*pi,360);
+  x=r*cos(t)+center(1,1);
+  y=r*sin(t)+center(1,2);
+endfunction
+
+[x,y]=getCircle([0 0],5);
