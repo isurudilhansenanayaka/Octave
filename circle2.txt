@@ -1,0 +1,36 @@
+
+function [x,y]=getCircle(center,r)
+  t=linspace(0,2*pi,360);
+  x=r*cos(t)+center(1,1);
+  y=r*sin(t)+center(1,2);
+endfunction
+
+[x1,y1]=getCircle([0 0],1);
+[x2,y2]=getCircle([0 0],2);
+[x3,y3]=getCircle([0 0],3);
+[x4,y4]=getCircle([0 0],4);
+[x5,y5]=getCircle([0 0],5);
+ 
+map=jet(5);
+  
+plot(x1,y1,"linewidth",5,"color",map(1,:));
+axis equal
+hold on;
+  
+plot(x2,y2,"linewidth",5,"color",map(4,:));
+axis equal
+hold on;
+
+plot(x3,y3,"linewidth",5,"color",map(3,:));
+axis equal
+hold on;
+  
+plot(x4,y4,"linewidth",5,"color",map(5,:));
+axis equal
+hold on;
+
+plot(x5,y5,"linewidth",5,"color",map(2,:));
+axis equal
+hold on;
+
+
