@@ -1,0 +1,7 @@
+>> x=2
+x =  2
+>> y=5
+y =  5
+>> answer=y*x.^3/(x-y)
+answer = -13.333
+>> diary off
